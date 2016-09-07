@@ -15,7 +15,7 @@
     if (ViewBag.FacesDetected == true)
     {
         // Show the image here.
-        <img src="~/Images/@ViewBag.ImageUrl" alt="Image" id="imageElement" style="display: none; height: 0; width: 0;" />
+        <img src="~/Images/@ViewBag.ImageUrl" alt="Image" id="imageElement" style="display: none; height: 100%; width: 100%;" />
 
         <p><b>@ViewBag.FaceCount</b> @if (ViewBag.FaceCount == 1) { <text><b>face</b> was</text> } else { <text><b>faces</b> were</text> } detected in the following image.</p>
         <p>A <code>canvas</code> element is being used to render the image and then rectangles are being drawn on the top of that canvas to highlight the faces in the image.</p>
@@ -34,14 +34,11 @@
             var myCanvas = canvas.getContext("2d");
             myCanvas.drawImage(img, 0, 0);
 
-            @if(ViewBag.ImageProcessed == true && ViewBag.FacesDetected == true)
-            {
-
-            img.style.display = "none";
+           
+            img.style.display = "block";
             var facesFound = true;
             var facePositions = JSON.parse(JSON.stringify(@Html.Raw(ViewBag.FacePositions)));
 
-            }
 
             if(facesFound) {
                 // Move forward.
