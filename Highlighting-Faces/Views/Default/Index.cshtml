@@ -35,7 +35,7 @@
             myCanvas.drawImage(img, 0, 0);
 
            
-            img.style.display = "block";
+            img.style.display = "none";
             var facesFound = true;
             var facePositions = JSON.parse(JSON.stringify(@Html.Raw(ViewBag.FacePositions)));
 
@@ -49,10 +49,10 @@
 
                     console.log(selectColor(face));
                     myCanvas.strokeRect(
-                                 facePositions[face]["X"],
-                                 facePositions[face]["Y"],
-                                 facePositions[face]["Width"],
-                                 facePositions[face]["Height"]
+                                 facePositions[face]["x"],
+                                 facePositions[face]["y"],
+                                 facePositions[face]["width"],
+                                 facePositions[face]["height"]
                              );
                }
            }
@@ -70,9 +70,9 @@
 
                // Change the values of rgb, randomly.
                switch (randomNumber) {
-                   case 0: red = 0; break;
-                   case 1: green = 0; break;
-                   case 2: blue = 0; break;
+                   case 0: red = 255; break;
+                   case 1: green = 255; break;
+                   case 2: blue = 255; break;
                }
 
                // Return the string.

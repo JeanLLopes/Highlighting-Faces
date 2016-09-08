@@ -123,6 +123,14 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="haarcascade_frontalface_default.xml" />
+    <Content Include="Images\0a549538-1bfd-49c6-8d01-d97b19dc8ff1.jpg" />
+    <Content Include="Images\0daea419-29df-4340-8663-1f859bf77fac.jpg" />
+    <Content Include="Images\520ee927-4053-4381-b9e7-ab5f3b818f25.jpg" />
+    <Content Include="Images\61ec5e12-964c-4a97-b05e-f29e8e291763.jpg" />
+    <Content Include="Images\7b80ff5e-118a-405e-8907-21c208e016ce.jpg" />
+    <Content Include="Images\a2914e8c-3688-446c-94a1-8562f7319172.jpg" />
+    <Content Include="Images\c32ee840-8079-4c28-b2ce-65abbf8ae0ae.jpg" />
+    <Content Include="Images\dfc87180-ced6-4ad3-9a56-4e69d4712195.jpg" />
     <Content Include="OpenTK.dll.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
